@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeleLawar | Kisah Kami</title>
+
+    <!-- Ikon Tab Browser (Favicon) -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <!-- SEO & WhatsApp Open Graph Tags -->
+    <meta name="description"
+        content="Cerita LeleLawar - Filosofi di balik warung pecel lele premium untuk para pencari makanan tengah malam.">
+    <meta property="og:title" content="Kisah Kami | LeleLawar">
+    <meta property="og:description"
+        content="Temukan filosofi 'Kelelawar' di balik nama kami dan dedikasi kami mengangkat derajat makanan jalanan.">
+    <meta property="og:image" content="https://lelelawar.com/assets/chef-cooking.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Elegant Serif & Clean Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+    <div id="preloader" class="preloader">
+        <div class="elegant-spinner"></div>
+    </div>
+
+    <!-- Elegant Navbar -->
+    <header class="header">
+        <nav class="nav-container">
+            <span style="display: flex; align-items: center; gap: 15px;">
+                <a href="index.html" class="logo">Lele<span class="text-blue">Lawar.</span></a>
+                <span id="liveStatusBadge" class="status-badge checking" style="display:none;"></span>
+            </span>
+
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="menu.html" class="nav-link">Menu Kami</a>
+                <a href="cerita.html" class="nav-link" style="color:var(--text-black); font-weight:500;">Kisah Kami</a>
+                <a href="lokasi.html" class="nav-link">Lokasi</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link" onclick="return false;">Pesan <svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none" style="vertical-align: middle; margin-left: 4px;"><path d="M6 9l6 6 6-6"/></svg></a>
+                    <div class="dropdown-content">
+                        <a href="#" style="color: #00AA13; font-weight: 500;">GoFood</a>
+                        <a href="#" style="color: #EE4D2D; font-weight: 500;">ShopeeFood</a>
+                        <a href="#" style="color: #00B14F; font-weight: 500;">GrabFood</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="menu-toggle" aria-label="Buka Menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav-content">
+            <a href="index.html" class="mobile-link">Beranda</a>
+            <a href="menu.html" class="mobile-link">Menu Kami</a>
+            <a href="cerita.html" class="mobile-link">Kisah Kami</a>
+            <a href="lokasi.html" class="mobile-link">Lokasi</a>
+            <div style="height: 1px; background: rgba(0,0,0,0.1); width: 80%; margin: 15px auto;"></div>
+            <span style="font-family: var(--font-heading); color: var(--text-gray); font-size: 1.1rem; margin-bottom: -15px;">Pesan Online:</span>
+            <div style="display: flex; gap: 20px; justify-content: center;">
+                <a href="#" style="color: #00AA13; font-weight: 600; text-decoration: none; font-size: 1.15rem;">GoFood</a>
+                <a href="#" style="color: #EE4D2D; font-weight: 600; text-decoration: none; font-size: 1.15rem;">Shopee</a>
+                <a href="#" style="color: #00B14F; font-weight: 600; text-decoration: none; font-size: 1.15rem;">Grab</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Elegant Story Section -->
+    <section class="story-section bg-light-blue page-top-spacing" style="min-height: 80vh; padding-bottom: 120px;">
+        <div class="container story-layout">
+            <div class="story-image fade-up">
+                <img src="assets/chef-cooking.jpg" alt="Proses Masak Elegan" loading="lazy">
+                <div class="floating-box">Asli. Bersih. Enak.</div>
+            </div>
+
+            <div class="story-content fade-up delay-1">
+                <span class="badge">Filosofi Nama</span>
+                <h2 class="section-title">Kenapa <span class="text-blue">LeleLawar?</span></h2>
+                <div class="divider" style="margin: 20px 0;"></div>
+                <p class="story-text">Mungkin Anda bertanya-tanya, dari mana asalnya nama unik yang sedikit nyeleneh
+                    ini. Jawabannya sederhana, terinspirasi dari gaya hidup <strong>Kelelawar</strong>.</p>
+                <p class="story-text">Sama seperti kelelawar yang baru mengepakkan sayap dan mencari makan saat matahari
+                    terbenam, kami pun baru memanaskan tungku ketika malam tiba. Kami mendedikasikan diri untuk para
+                    "kelelawar" malam—mereka yang lapar sepulang kerja keras, yang gemar nongkrong hingga larut, atau
+                    yang sekadar mencari kehangatan di tengah sepinya kota.</p>
+                <p class="story-text">Tentu saja ada permainan kata di dalamnya: <em>Lele</em> sebagai hidangan merakyat
+                    kebanggaan kami, dan <em>Lawar</em> (Kelelawar) sebagai waktu setia kami melayani Anda hingga dini
+                    hari.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Minimalist Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Lele<span class="text-blue">Lawar.</span></a>
+                <p>Mendefinisikan ulang kuliner angkringan malam hari dengan sentuhan kebersihan dan keanggunan.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Eksplorasi</h4>
+                <a href="index.html">Beranda</a>
+                <a href="menu.html">Menu</a>
+                <a href="cerita.html">Cerita Kami</a>
+            </div>
+
+            <div class="footer-socials">
+                <h4>Terhubung</h4>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">Google Maps</a>
+            </div>
+
+            <div class="footer-delivery">
+                <h4>Pesan Online</h4>
+                <a href="#" style="color: #00AA13; font-weight: 500;">GoFood</a>
+                <a href="#" style="color: #EE4D2D; font-weight: 500;">ShopeeFood</a>
+                <a href="#" style="color: #00B14F; font-weight: 500;">GrabFood</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 LeleLawar. Seluruh hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Features -->
+    <div class="floating-features">
+        <button id="scrollToTopBtn" aria-label="Kembali ke atas">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M12 19V5M5 12l7-7 7 7" />
+            </svg>
+        </button>
+        <a href="https://wa.me/6281234567890" target="_blank" class="floating-wa" aria-label="Chat WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+            </svg>
+        </a>
+    </div>
+
+    <script type="module" src="/src/script.js"></script>
+</body>
+
+</html>

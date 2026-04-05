@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+.env
+.parcel-cache
+.cache
+.temp
+.vercel
+.netlify
+.vscode/
+.idea/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*

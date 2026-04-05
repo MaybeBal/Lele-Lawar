@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeleLawar | Menu Kami</title>
+
+    <!-- Ikon Tab Browser (Favicon) -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <!-- SEO & WhatsApp Open Graph Tags -->
+    <meta name="description"
+        content="Menu LeleLawar - Temukan ragam lauk utama, pelengkap, dan minuman khas angkringan premium kami.">
+    <meta property="og:title" content="Menu Kami | LeleLawar">
+    <meta property="og:description"
+        content="Eksplorasi hidangan lezat mulai dari Signature Pecel Lele hingga Bebek Goreng Madura.">
+    <meta property="og:image" content="https://lelelawar.com/assets/lele-premium.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Elegant Serif & Clean Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+    <div id="preloader" class="preloader">
+        <div class="elegant-spinner"></div>
+    </div>
+
+    <!-- Elegant Navbar -->
+    <header class="header">
+        <nav class="nav-container">
+            <span style="display: flex; align-items: center; gap: 15px;">
+                <a href="index.html" class="logo">Lele<span class="text-blue">Lawar.</span></a>
+                <span id="liveStatusBadge" class="status-badge checking" style="display:none;"></span>
+            </span>
+
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="menu.html" class="nav-link" style="color:var(--text-black); font-weight:500;">Menu Kami</a>
+                <a href="cerita.html" class="nav-link">Kisah Kami</a>
+                <a href="lokasi.html" class="nav-link">Lokasi</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link" onclick="return false;">Pesan <svg viewBox="0 0 24 24" width="12"
+                            height="12" stroke="currentColor" stroke-width="2" fill="none"
+                            style="vertical-align: middle; margin-left: 4px;">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg></a>
+                    <div class="dropdown-content">
+                        <a href="#" style="color: #00AA13; font-weight: 500;">GoFood</a>
+                        <a href="#" style="color: #EE4D2D; font-weight: 500;">ShopeeFood</a>
+                        <a href="#" style="color: #00B14F; font-weight: 500;">GrabFood</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="menu-toggle" aria-label="Buka Menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav-content">
+            <a href="index.html" class="mobile-link">Beranda</a>
+            <a href="menu.html" class="mobile-link">Menu Kami</a>
+            <a href="cerita.html" class="mobile-link">Kisah Kami</a>
+            <a href="lokasi.html" class="mobile-link">Lokasi</a>
+            <div style="height: 1px; background: rgba(0,0,0,0.1); width: 80%; margin: 15px auto;"></div>
+            <span
+                style="font-family: var(--font-heading); color: var(--text-gray); font-size: 1.1rem; margin-bottom: -15px;">Pesan
+                Online:</span>
+            <div style="display: flex; gap: 20px; justify-content: center;">
+                <a href="#"
+                    style="color: #00AA13; font-weight: 600; text-decoration: none; font-size: 1.15rem;">GoFood</a>
+                <a href="#"
+                    style="color: #EE4D2D; font-weight: 600; text-decoration: none; font-size: 1.15rem;">Shopee</a>
+                <a href="#"
+                    style="color: #00B14F; font-weight: 600; text-decoration: none; font-size: 1.15rem;">Grab</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Print Only Cover Page -->
+    <div class="print-cover" style="display: none;">
+        <div class="cover-content">
+            <h1 class="logo" style="font-size: 4rem;">Lele<span class="text-blue">Lawar.</span></h1>
+            <div class="divider" style="margin: 30px auto; width: 100px; height: 3px;"></div>
+            <h2
+                style="font-family: var(--font-body); font-weight: 400; font-size: 1.5rem; letter-spacing: 2px; text-transform: uppercase;">
+                Buku Menu
+            </h2>
+            <p style="margin-top: 100px; color: #555; font-style: italic;">
+                "Mendefinisikan ulang kuliner angkringan malam hari dengan sentuhan kebersihan dan keanggunan."
+            </p>
+        </div>
+    </div>
+
+    <!-- Aesthetic Menu Section -->
+    <section class="menu-section page-top-spacing" style="min-height: 80vh;">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">Menu <span class="text-blue">Andalan Kami</span></h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Kurasi spesial dari resep keluarga untuk memanjakan rasa Anda.</p>
+            </div>
+
+            <!-- Menu Category Navigation Buttons -->
+            <div class="menu-nav-links fade-up"
+                style="display: flex; justify-content: center; gap: 15px; margin-bottom: 50px; flex-wrap: wrap;">
+                <a href="#section-utama" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Lauk
+                    Utama</a>
+                <a href="#section-pelengkap" class="btn btn-outline"
+                    style="padding: 10px 20px; font-size: 0.9rem;">Pelengkap</a>
+                <a href="#section-minuman" class="btn btn-outline"
+                    style="padding: 10px 20px; font-size: 0.9rem;">Minuman</a>
+            </div>
+
+            <!-- PDF Download Button -->
+            <div class="fade-up print-hidden" style="text-align: center; margin-bottom: 60px;">
+                <button class="btn"
+                    style="background: transparent; border: 1px solid var(--text-gray); color: var(--text-black); padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 8px;"
+                    onclick="window.print();">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download / Cetak Menu (PDF)
+                </button>
+            </div>
+
+            <!-- Anchor point for Menu Utama -->
+            <div id="section-utama">
+                <div class="menu-grid">
+                    <!-- Menu Item 1 -->
+                    <article class="menu-card fade-up">
+                        <div class="card-img-wrap">
+                            <img src="assets/lele-premium.jpg" alt="Lele Signature" loading="lazy">
+                            <div class="card-price">Rp&nbsp;35.000</div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">LeleLawar Signature</h3>
+                            <p class="card-desc">Lele segar digoreng krispi dengan rempah rahasia yang meresap sempurna,
+                                disajikan dengan sambal terasi bakar hangat.</p>
+                        </div>
+                    </article>
+
+                    <!-- Menu Item 2 -->
+                    <article class="menu-card fade-up delay-1">
+                        <div class="card-img-wrap">
+                            <img src="assets/ayam-kampung.jpg" alt="Ayam Kremes" loading="lazy">
+                            <div class="card-price">Rp&nbsp;45.000</div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Ayam Kampung Kremes</h3>
+                            <p class="card-desc">Ayam kampung ungkep empuk meresap, ditaburi kremesan gurih yang
+                                melimpah
+                                dan renyah di setiap gigitannya.</p>
+                        </div>
+                    </article>
+
+                    <!-- Menu Item 3 -->
+                    <article class="menu-card fade-up delay-2">
+                        <div class="card-img-wrap">
+                            <img src="assets/bebek-goreng.jpg" alt="Bebek Hitam" loading="lazy">
+                            <div class="card-price">Rp&nbsp;55.000</div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Bebek Goreng Hitam</h3>
+                            <p class="card-desc">Bebek muda disajikan dengan lumuran bumbu hitam khas Madura yang kaya
+                                akan
+                                rempah. Daging empuk lepas dari tulang.</p>
+                        </div>
+                    </article>
+                    <!-- Additional Menu Items -->
+                    <article class="menu-card fade-up">
+                        <div class="card-img-wrap">
+                            <img src="assets/ayam-kampung.jpg" alt="Ayam Penyet" loading="lazy">
+                            <div class="card-price">Rp&nbsp;30.000</div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Ayam Penyet Sambal Ijo</h3>
+                            <p class="card-desc">Ayam goreng bumbu rempah yang dipenyet dengan sambal ijo super pedas
+                                dan
+                                segar.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card fade-up delay-1">
+                        <div class="card-img-wrap">
+                            <!-- Reusing images for placeholder purposes -->
+                            <img src="assets/chef-cooking.jpg" alt="Tumis Kangkung" loading="lazy">
+                            <div class="card-price">Rp&nbsp;15.000</div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Cah Kangkung Terasi</h3>
+                            <p class="card-desc">Tumisan kangkung segar dengan bumbu terasi udang yang gurih dan wangi.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card fade-up delay-2">
+                        <div class="card-img-wrap">
+                            <img src="assets/lele-premium.jpg" alt="Sate Kulit" loading="lazy">
+                            <div class="card-price">Rp&nbsp;20.000</div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Sate Kulit & Usus (Porsi)</h3>
+                            <p class="card-desc">Sate kulit dan usus ayam yang digoreng hingga garing, cocok sebagai
+                                pelengkap lauk utama.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Anchor point for Menu Pelengkap -->
+            <div id="section-pelengkap" style="display: none;">
+                <!-- Tambahan (Additional) Section -->
+                <div class="section-header fade-up" style="margin-top: 40px; margin-bottom: 40px;">
+                    <h2 class="section-title">Menu <span class="text-blue">Pelengkap</span></h2>
+                    <div class="divider"></div>
+                    <p class="section-subtitle">Teman makan untuk menyempurnakan hidangan utama Anda.</p>
+                </div>
+
+                <div class="side-menu-container fade-up delay-1"
+                    style="max-width: 800px; margin: 0 auto; background: var(--bg-white); padding: 40px; border-radius: 12px; box-shadow: var(--shadow-soft);">
+                    <ul style="list-style: none; padding: 0;">
+                        <!-- Nasi -->
+                        <li
+                            style="display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px dashed var(--border-color);">
+                            <div>
+                                <h4 style="font-family: var(--font-body); font-size: 1.1rem; color: var(--text-black);">
+                                    Nasi Putih Hangat</h4>
+                                <span style="font-size: 0.9rem; color: var(--text-gray);">Nasi pulen dari beras
+                                    pilihan</span>
+                            </div>
+                            <div style="font-weight: 600; color: var(--accent-blue);">Rp&nbsp;5.000</div>
+                        </li>
+                        <li
+                            style="display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px dashed var(--border-color);">
+                            <div>
+                                <h4 style="font-family: var(--font-body); font-size: 1.1rem; color: var(--text-black);">
+                                    Nasi Uduk Gurih</h4>
+                                <span style="font-size: 0.9rem; color: var(--text-gray);">Ditaburi bawang goreng
+                                    renyah</span>
+                            </div>
+                            <div style="font-weight: 600; color: var(--accent-blue);">Rp&nbsp;7.000</div>
+                        </li>
+
+                        <!-- Lauk Sampingan -->
+                        <li
+                            style="display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px dashed var(--border-color);">
+                            <div>
+                                <h4 style="font-family: var(--font-body); font-size: 1.1rem; color: var(--text-black);">
+                                    Tempe Goreng Tepung</h4>
+                                <span style="font-size: 0.9rem; color: var(--text-gray);">2 Pcs (Potongan tebal)</span>
+                            </div>
+                            <div style="font-weight: 600; color: var(--accent-blue);">Rp&nbsp;4.000</div>
+                        </li>
+                        <li
+                            style="display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px dashed var(--border-color);">
+                            <div>
+                                <h4 style="font-family: var(--font-body); font-size: 1.1rem; color: var(--text-black);">
+                                    Tahu Kuning Goreng</h4>
+                                <span style="font-size: 0.9rem; color: var(--text-gray);">2 Pcs (Gurih lembut)</span>
+                            </div>
+                            <div style="font-weight: 600; color: var(--accent-blue);">Rp&nbsp;4.000</div>
+                        </li>
+                        <li
+                            style="display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px dashed var(--border-color);">
+                            <div>
+                                <h4 style="font-family: var(--font-body); font-size: 1.1rem; color: var(--text-black);">
+                                    Kol Goreng Crispy</h4>
+                                <span style="font-size: 0.9rem; color: var(--text-gray);">Menu andalan pendamping pecel
+                                    lele</span>
+                            </div>
+                            <div style="font-weight: 600; color: var(--accent-blue);">Rp&nbsp;6.000</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Anchor point for Menu Minuman -->
+            <div id="section-minuman" style="display: none;">
+                <!-- Minuman (Beverages) Section -->
+                <div class="section-header fade-up" style="margin-top: 40px; margin-bottom: 40px;">
+                    <h2 class="section-title">Menu <span class="text-blue">Minuman</span></h2>
+                    <div class="divider"></div>
+                    <p class="section-subtitle">Pelepas dahaga setelah menyantap pedasnya hidangan kami.</p>
+                </div>
+
+                <div class="side-menu-container fade-up delay-1"
+                    style="max-width: 800px; margin: 0 auto; background: var(--bg-white); padding: 40px; border-radius: 12px; box-shadow: var(--shadow-soft);">
+                    <ul style="list-style: none; padding: 0;">
+                        <!-- Minuman Item -->
+                        <li
+                            style="display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px dashed var(--border-color);">
+                            <div>
+                                <h4 style="font-family: var(--font-body); font-size: 1.1rem; color: var(--text-black);">
+                                    Teh Manis (Dingin / Panas)</h4>
+                                <span style="font-size: 0.9rem; color: var(--text-gray);">Teh melati seduh dengan gula
+                                    batu murni</span>
+                            </div>
+                            <div style="font-weight: 600; color: var(--accent-blue);">Rp&nbsp;5.000</div>
+                        </li>
+                        <li
+                            style="display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px dashed var(--border-color);">
+                            <div>
+                                <h4 style="font-family: var(--font-body); font-size: 1.1rem; color: var(--text-black);">
+                                    Jeruk Peras (Dingin / Panas)</h4>
+                                <span style="font-size: 0.9rem; color: var(--text-gray);">Perasan jeruk peras asli, kaya
+                                    vitamin C</span>
+                            </div>
+                            <div style="font-weight: 600; color: var(--accent-blue);">Rp&nbsp;8.000</div>
+                        </li>
+                        <li
+                            style="display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px dashed var(--border-color);">
+                            <div>
+                                <h4 style="font-family: var(--font-body); font-size: 1.1rem; color: var(--text-black);">
+                                    Teh Tawar (Dingin / Panas)</h4>
+                                <span style="font-size: 0.9rem; color: var(--text-gray);">Teh seduh murni tanpa
+                                    gula</span>
+                            </div>
+                            <div style="font-weight: 600; color: var(--accent-blue);">Rp&nbsp;3.000</div>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; padding: 15px 0;">
+                            <div>
+                                <h4 style="font-family: var(--font-body); font-size: 1.1rem; color: var(--text-black);">
+                                    Air Mineral Botol</h4>
+                                <span style="font-size: 0.9rem; color: var(--text-gray);">Ukuran 600ml (Dingin /
+                                    Biasa)</span>
+                            </div>
+                            <div style="font-weight: 600; color: var(--accent-blue);">Rp&nbsp;5.000</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Minimalist Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Lele<span class="text-blue">Lawar.</span></a>
+                <p>Mendefinisikan ulang kuliner angkringan malam hari dengan sentuhan kebersihan dan keanggunan.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Eksplorasi</h4>
+                <a href="index.html">Beranda</a>
+                <a href="menu.html">Menu</a>
+                <a href="cerita.html">Cerita Kami</a>
+            </div>
+
+            <div class="footer-socials">
+                <h4>Terhubung</h4>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">Google Maps</a>
+            </div>
+
+            <div class="footer-delivery">
+                <h4>Pesan Online</h4>
+                <a href="#" style="color: #00AA13; font-weight: 500;">GoFood</a>
+                <a href="#" style="color: #EE4D2D; font-weight: 500;">ShopeeFood</a>
+                <a href="#" style="color: #00B14F; font-weight: 500;">GrabFood</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 LeleLawar. Seluruh hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Features -->
+    <div class="floating-features">
+        <button id="scrollToTopBtn" aria-label="Kembali ke atas">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M12 19V5M5 12l7-7 7 7" />
+            </svg>
+        </button>
+        <a href="https://wa.me/6281234567890" target="_blank" class="floating-wa" aria-label="Chat WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+            </svg>
+        </a>
+    </div>
+
+    <script type="module" src="/src/script.js"></script>
+</body>
+
+</html>
